@@ -17,8 +17,8 @@ SELECT
 FROM messages
 `
 
-func (q *Queries) GetMessage(ctx context.Context) (Message, error) {
-	row := q.db.QueryRow(ctx, getMessage)
+func (q *Queries) GetMessage(ctx context.Context, id uuid.UUID) (Message, error) {
+	row := q.db.QueryRow(ctx, getMessage, id)
 	var i Message
 	err := row.Scan(
 		&i.ID,
