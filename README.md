@@ -48,7 +48,7 @@ go generate ./gen
 go run ./cmd/ws/main.go
 ```
 
-⚠️ Este comando executará apenas o backend (servidor). Para se conectar à aplicação web, siga os passos do repositório abaixo:
+⚠️ O comando acima executará apenas o backend (servidor). Para se conectar à aplicação web, siga os passos do repositório abaixo:
 
 - [Repositório da aplicação Web](https://github.com/iigorfelipe/ama-ask-react-web)
 
